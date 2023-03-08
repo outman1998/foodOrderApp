@@ -9,7 +9,7 @@ export default function HeaderCardButton() {
         <span className={classes.icon}>
             <CartIcon />
         </span>
-        <span>Your cart</span>
+        <span>Indkøbskurv</span>
         <span className={classes.badge}>3</span>
     </button>
   )
