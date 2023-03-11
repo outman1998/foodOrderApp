@@ -3,9 +3,9 @@ import classes from './HeaderCardButton.module.css';
 import CartIcon from '../Cart/CartIcon';
 
 
-export default function HeaderCardButton() {
+export default function HeaderCardButton(props) {
   return (
-    <button className={classes.button}>
+    <button onClick={props.handlingClick} className={classes.button}>
         <span className={classes.icon}>
             <CartIcon />
         </span>
