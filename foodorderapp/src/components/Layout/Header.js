@@ -1,5 +1,4 @@
 import React from 'react'
-import mealsImage from '../../Assets/meals.jpeg';
 import classes from './Header.module.css';
 import HeaderCardButton from './HeaderCardButton';
 
@@ -12,7 +11,7 @@ export default function Header(props) {
             <HeaderCardButton handlingClick={props.onShowCart}/>
         </header>
         <div className={classes['main-image']}>
-            <img alt='mealsImage' src={mealsImage} />
+            <img alt='mealsImage' src="https://img.freepik.com/free-photo/top-view-table-full-delicious-food-composition_23-2149141353.jpg?w=2000" />
         </div>
     </React.Fragment>
   )
