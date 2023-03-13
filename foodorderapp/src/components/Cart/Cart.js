@@ -12,9 +12,13 @@ export default function Cart(props) {
 
   const hasItems = cartCtx.length > 0;
 
-  const cartItemRemoveHandler = id => {}
+  const cartItemRemoveHandler = id => {
+    cartCtx.removeItem(id);
+  }
 
-  const cartItemAddHandler = item => {}
+  const cartItemAddHandler = item => {
+    cartCtx.addItem(item);
+  }
 
 
         const cartItems = (
