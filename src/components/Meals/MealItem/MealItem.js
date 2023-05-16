@@ -8,7 +8,7 @@ export default function MealItem(props) {
 
   const cartCtx = useContext(cartContext)
 
-  const price = `$${props.price.toFixed(2)}`;
+  const price = `${props.price} DKK`;
 
   const addToCartHandler = amount => {
     cartCtx.addItem({

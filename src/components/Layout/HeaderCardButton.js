@@ -18,7 +18,7 @@ export default function HeaderCardButton(props) {
         <span className={classes.icon}>
             <CartIcon />
         </span>
-        <span>Basket</span>
+        <span>Kurv</span>
         <span className={classes.badge}>{numberOfCartItems}</span>
     </button>
   )

@@ -8,7 +8,7 @@ import CartItem from './Cartitem';
 export default function Cart(props) {
 
   const cartCtx = useContext(Cartcontext);
-  const totalAmount = `$${cartCtx.totalAmount.toFixed(2)}`;
+  const totalAmount = `${cartCtx.totalAmount.toFixed(2)} DKK`;
 
   const hasItems = cartCtx.length > 0;
 
@@ -42,11 +42,11 @@ export default function Cart(props) {
     <Modal onClose={props.onClose}>
       {cartItems}
       <div className={classes.total}>
-        <span>total amount</span>
+        <span>total pris:</span>
         <span>{totalAmount}</span>
       </div>
       <div className={classes.actions}>
-        <button className={classes['button--alt']} onClick={props.onClose}>Close</button>
+        <button className={classes['button--alt']} onClick={props.onClose}>Luk</button>
         {hasItems && <button className={classes.button}>Order!</button>}
       </div>
     </Modal>
