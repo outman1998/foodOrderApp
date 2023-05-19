@@ -80,7 +80,14 @@ export default function Cart(props) {
       {!isCheckout && modalActions}
   </React.Fragment>
 
-  const didSubmitModalContent = <p>Vi har modtaget din ordre!</p>
+  const didSubmitModalContent = (
+    <React.Fragment>
+      <p>Vi har modtaget din ordre!</p>
+      <div className={classes.actions}>
+        <button className={classes['button--alt']} onClick={props.onClose}>Luk</button>
+      </div>
+    </React.Fragment>
+    )
 
 
 
