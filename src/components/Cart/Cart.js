@@ -40,6 +40,7 @@ export default function Cart(props) {
     });
     setIsSubmitting(false);
     setDidSubmit(true);
+    cartCtx.clearCart();
   }
 
 
@@ -84,7 +85,7 @@ export default function Cart(props) {
     <React.Fragment>
       <p>Vi har modtaget din ordre!</p>
       <div className={classes.actions}>
-        <button className={classes['button--alt']} onClick={props.onClose}>Luk</button>
+        <button className={classes.button} onClick={props.onClose}>Luk</button>
       </div>
     </React.Fragment>
     )
