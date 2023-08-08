@@ -12,7 +12,7 @@ export default function AvailableMeals() {
   useEffect(() => {
 
     const fetchMeals = async () => {
-      const response = await fetch('https://meals-project-d354f-default-rtdb.firebaseio.com/meals.json');
+      const response = await fetch('https://meals-5d87e-default-rtdb.firebaseio.com/meals.json');
       const responseData = await response.json();
 
 
